@@ -25,7 +25,7 @@ def mksubdir(parent, subdir):
 
 
 def norebo(args, working_directory='.', search_path=()):
-    norebo = os.path.join(NOREBO_ROOT, 'norebo')
+    norebo = os.path.join(NOREBO_ROOT, 'run-norebo')
     norebo_path = os.pathsep.join(search_path)
     os.environ['NOREBO_PATH'] = norebo_path
     logging.debug('Running norebo\n\tCWD = %s\n\tPATH = %s\n\t%s',

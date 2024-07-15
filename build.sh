@@ -17,7 +17,7 @@ function rename {
 }
 
 function compile_everything {
-  ../norebo ORP.Compile \
+  ../run-norebo ORP.Compile \
 	Norebo.Mod/s \
 	Kernel.Mod/s \
   	FileDir.Mod/s \
@@ -34,7 +34,7 @@ function compile_everything {
   	ORP.Mod/s \
   	ORTool.Mod/s
   rename rsc rsx
-  ../norebo CoreLinker.LinkSerial Modules InnerCore
+  ../run-norebo CoreLinker.LinkSerial Modules InnerCore
   rename rsx rsc
 }
 
